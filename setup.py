@@ -3,12 +3,6 @@ from glob import glob
 from setuptools import setup, find_packages
 
 
-# must be a single statement since buildozer is currently parsing it, refs:
-# https://github.com/kivy/buildozer/issues/722
-install_reqs = [
-    "cookiecutter", "pbxproj", "Pillow", "requests", "sh",
-]
-
 def read(fname):
     with open(os.path.join(os.path.dirname(__file__), fname)) as f:
         return f.read()
@@ -30,7 +24,7 @@ setup(
     author_email="kivy-dev@googlegroups.com",
     url="https://github.com/kivy/kivy-ios",
     python_requires=">=3.6.0",
-    install_requires=install_reqs,
+    install_reqs=["cookiecutter", "pbxproj", "Pillow", "requests", "sh"],
     packages=find_packages(),
     package_data={
         # note this method is a bit excessive as it includes absolutely everything

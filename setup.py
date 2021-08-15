@@ -24,7 +24,7 @@ setup(
     author_email="kivy-dev@googlegroups.com",
     url="https://github.com/kivy/kivy-ios",
     python_requires=">=3.6.0",
-    install_reqs=["cookiecutter", "pbxproj", "Pillow", "requests", "sh"],
+    install_requires=["cookiecutter", "pbxproj", "Pillow", "requests", "sh"],
     packages=find_packages(),
     package_data={
         # note this method is a bit excessive as it includes absolutely everything

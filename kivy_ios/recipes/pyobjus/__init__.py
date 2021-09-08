@@ -1,9 +1,9 @@
-from kivy_ios.toolchain import CythonRecipe
+kfrom kivy_ios.toolchain import CythonRecipe
 
 
 class PyobjusRecipe(CythonRecipe):
-    version = "master"
-    url = "https://github.com/kivy/pyobjus/archive/{version}.zip"
+    version = "uikit"
+    url = "https://github.com/meow464/pyobjus/archive/{version}.zip"
     library = "libpyobjus.a"
     depends = ["python"]
     pre_build_ext = True

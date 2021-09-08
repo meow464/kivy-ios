@@ -1,4 +1,4 @@
-kfrom kivy_ios.toolchain import CythonRecipe
+from kivy_ios.toolchain import CythonRecipe
 
 
 class PyobjusRecipe(CythonRecipe):
